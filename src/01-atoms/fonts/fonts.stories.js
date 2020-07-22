@@ -1,6 +1,7 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import fonts from '../../styles/settings/_fonts.scss';
+import { dummyText } from '../../js/helpers';
 
 export default {
   title: '01-Atoms/Fonts',
@@ -17,12 +18,7 @@ export const FontPrimary = () => {
   const fontFamily = fonts.fontPrimary;
   return renderToStaticMarkup(
     <div>
-      <p style={styles(fontFamily, fontWeight)}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed
-        tenetur aut itaque culpa repellendus ab, quae, iure voluptatibus iste
-        fugit in placeat assumenda voluptates similique amet nostrum ducimus
-        ipsum.
-      </p>
+      <p style={styles(fontFamily, fontWeight)}>{dummyText}</p>
       <p>
         $fontPrimary: {fontFamily} - {fontWeight}
       </p>
@@ -35,12 +31,7 @@ export const FontSecondary500 = () => {
   const fontFamily = fonts.fontSecondary;
   return renderToStaticMarkup(
     <div>
-      <p style={styles(fontFamily, fontWeight)}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed
-        tenetur aut itaque culpa repellendus ab, quae, iure voluptatibus iste
-        fugit in placeat assumenda voluptates similique amet nostrum ducimus
-        ipsum.
-      </p>
+      <p style={styles(fontFamily, fontWeight)}>{dummyText}</p>
       <p>
         $fontSecondary: {fontFamily} - {fontWeight}
       </p>
@@ -53,12 +44,7 @@ export const FontSecondary700 = () => {
   const fontFamily = fonts.fontSecondary;
   return renderToStaticMarkup(
     <div>
-      <p style={styles(fontFamily, fontWeight)}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis sed
-        tenetur aut itaque culpa repellendus ab, quae, iure voluptatibus iste
-        fugit in placeat assumenda voluptates similique amet nostrum ducimus
-        ipsum.
-      </p>
+      <p style={styles(fontFamily, fontWeight)}>{dummyText}</p>
       <p>
         $fontSecondary: {fontFamily} - {fontWeight}
       </p>
