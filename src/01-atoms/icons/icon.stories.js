@@ -53,3 +53,5 @@ export const CBTool = () => renderToStaticMarkup(<Icon name='cb-tool' />);
 
 export const CBUmbrella = () =>
   renderToStaticMarkup(<Icon name='cb-umbrella' />);
+
+export const Logo = () => renderToStaticMarkup(<Icon name='logo' />);
