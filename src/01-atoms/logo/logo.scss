@@ -1,5 +1,6 @@
 .a-logo {
   width: rem(80);
+  display: inline-block;
 
   @include media-breakpoint-up(medium) {
     width: rem(100);

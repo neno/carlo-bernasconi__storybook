@@ -7,6 +7,7 @@ const Logo = () => (
     width='374'
     height='120'
     viewBox='0 0 374 120'
+    alt='Logo'
   >
     <defs>
       <clipPath id='clip-carlo-ag_logo_rgb_tr'>
