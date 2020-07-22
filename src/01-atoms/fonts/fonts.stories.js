@@ -42,7 +42,7 @@ export const FontSecondary500 = () => {
         ipsum.
       </p>
       <p>
-        $fontPrimary: {fontFamily} - {fontWeight}
+        $fontSecondary: {fontFamily} - {fontWeight}
       </p>
     </div>
   );
@@ -60,7 +60,7 @@ export const FontSecondary700 = () => {
         ipsum.
       </p>
       <p>
-        $fontPrimary: {fontFamily} - {fontWeight}
+        $fontSecondary: {fontFamily} - {fontWeight}
       </p>
     </div>
   );
