@@ -22,6 +22,7 @@ import CBMapPin from './icons/cb-map-pin';
 import CBTool from './icons/cb-tool';
 import CBUmbrella from './icons/cb-umbrella';
 import Logo from './icons/logo';
+import Menu from './icons/menu';
 
 const icons = {
   'arrow-left': ArrowLeft,
@@ -46,6 +47,7 @@ const icons = {
   'cb-tool': CBTool,
   'cb-umbrella': CBUmbrella,
   logo: Logo,
+  menu: Menu,
 };
 
 const Icon = ({ name }) => {
