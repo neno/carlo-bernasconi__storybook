@@ -1,1 +1,13 @@
-// @import './atoms/icon/icon';
+/// Settings
+@import './styles/settings/fonts';
+@import './styles/settings/breakpoints';
+@import './styles/settings/colors';
+
+/// Functions
+@import './styles/functions/functions';
+
+/// Tools
+@import './styles/tools/mixins';
+
+/// basic styles
+@import './styles/base/typo';

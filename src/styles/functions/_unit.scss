@@ -1,7 +1,0 @@
-@function rem($value, $context: 16) {
-  @return ($value / $context) * 1rem;
-}
-
-@function em($value, $context: 16) {
-  @return ($value / $context) * 1em;
-}
