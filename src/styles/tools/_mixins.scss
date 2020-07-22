@@ -1,0 +1,15 @@
+@import '../settings/breakpoints';
+@import '../functions/unit';
+@import '../functions/functions';
+
+@mixin media-breakpoint-up($name) {
+  $min: strip-unit(map-get($breakpoints, $name));
+
+  @if $min {
+    @media (min-width: #{em($min)}) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
