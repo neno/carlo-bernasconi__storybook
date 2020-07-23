@@ -12,8 +12,10 @@
     padding: 0;
   }
 
-  &:active,
-  &:hover,
+  @include hover {
+    color: $color-primary-orange;
+  }
+
   &--active {
     color: $color-primary-orange;
   }
