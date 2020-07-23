@@ -1,3 +1,11 @@
 $color-dark: #243b47;
 $color-light: #ffffff;
 $color-medium: #f4f4f4;
+$color-hover: #c8652b;
+
+:export {
+  colorDark: $color-dark;
+  colorLight: $color-light;
+  colorMedium: $color-medium;
+  colorHover: $color-hover;
+}

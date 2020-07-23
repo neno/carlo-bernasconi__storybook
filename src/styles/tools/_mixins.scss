@@ -15,7 +15,7 @@
 %h3,
 %h3,
 %h4 {
-  font-family: $fontSecondary;
+  font-family: $font-secondary;
   font-weight: 700;
   line-height: 1.2;
   margin-bottom: rem(20);
@@ -62,7 +62,7 @@
 }
 
 %font-regular {
-  font-family: $fontPrimary;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: rem(16);
   line-height: 1.25;

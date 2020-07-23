@@ -1,0 +1,20 @@
+.a-nav-link {
+  @extend %h4;
+
+  display: block;
+  padding: rem(15) 0;
+  margin: 0;
+  text-decoration: none;
+  color: $color-dark;
+
+  @include media-breakpoint-up(large) {
+    margin-right: rem(40);
+    padding: 0;
+  }
+
+  &:active,
+  &:hover,
+  &--active {
+    color: $color-hover;
+  }
+}

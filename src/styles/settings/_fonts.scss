@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@500;700&display=swap');
 
-$fontPrimary: 'Karla', sans-serif;
-$fontSecondary: 'Rubik', sans-serif;
+$font-primary: 'Karla', sans-serif;
+$font-secondary: 'Rubik', sans-serif;
 
 :export {
-  fontPrimary: $fontPrimary;
-  fontSecondary: $fontSecondary;
+  fontPrimary: $font-primary;
+  fontSecondary: $font-secondary;
 }

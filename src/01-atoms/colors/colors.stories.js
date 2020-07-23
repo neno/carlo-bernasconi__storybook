@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import colors from './colors.scss';
+import colors from '../../styles/settings/_colors.scss';
 
 export default {
   title: '01-Atoms/Colors',
@@ -29,3 +29,6 @@ export const medium = () =>
 
 export const light = () =>
   renderToStaticMarkup(<ColorBox color={colors.colorLight} />);
+
+export const Hover = () =>
+  renderToStaticMarkup(<ColorBox color={colors.colorHover} />);
