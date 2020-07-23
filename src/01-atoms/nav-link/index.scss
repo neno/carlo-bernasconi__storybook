@@ -5,7 +5,7 @@
   padding: rem(15) 0;
   margin: 0;
   text-decoration: none;
-  color: $color-dark;
+  color: $color-primary-blue;
 
   @include media-breakpoint-up(large) {
     margin-right: rem(40);
@@ -15,6 +15,6 @@
   &:active,
   &:hover,
   &--active {
-    color: $color-hover;
+    color: $color-primary-orange;
   }
 }

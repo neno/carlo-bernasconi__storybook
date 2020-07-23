@@ -21,14 +21,17 @@ const ColorBox = ({ color }) => {
   );
 };
 
-export const dark = () =>
-  renderToStaticMarkup(<ColorBox color={colors.colorDark} />);
+export const PrimaryBlue = () =>
+  renderToStaticMarkup(<ColorBox color={colors.primaryColorBlue} />);
 
-export const medium = () =>
-  renderToStaticMarkup(<ColorBox color={colors.colorMedium} />);
+export const PrimaryOrange = () =>
+  renderToStaticMarkup(<ColorBox color={colors.primaryColorOrange} />);
 
-export const light = () =>
-  renderToStaticMarkup(<ColorBox color={colors.colorLight} />);
+export const PrimaryWhite = () =>
+  renderToStaticMarkup(<ColorBox color={colors.primaryColorWhite} />);
 
-export const Hover = () =>
-  renderToStaticMarkup(<ColorBox color={colors.colorHover} />);
+export const SecondaryGray = () =>
+  renderToStaticMarkup(<ColorBox color={colors.secondaryColorGray} />);
+
+export const SecondaryGrayLight = () =>
+  renderToStaticMarkup(<ColorBox color={colors.secondaryColorGrayLight} />);
