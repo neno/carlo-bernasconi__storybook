@@ -1,0 +1,59 @@
+.a-btn {
+  @extend %button;
+
+  border: 1px solid transparent;
+  padding: rem(13) rem(50);
+  cursor: pointer;
+  transition: transform;
+  position: relative;
+  overflow: hidden;
+
+  span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    will-change: color;
+  }
+
+  &--primary {
+    background-color: $color-primary-blue;
+    border-color: $color-primary-blue;
+    color: $color-primary-white;
+    will-change: background-color, border-color;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      transition: width $transition-time-default;
+      width: 0%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $color-primary-orange;
+      will-change: background-color, width;
+    }
+
+    @include hover {
+      border-color: $color-primary-orange;
+
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &--secondary {
+    color: $color-primary-blue;
+    border-color: $color-primary-blue;
+    background-color: $color-primary-white;
+    will-change: color, border-color;
+
+    @include hover {
+      color: $color-primary-orange;
+      border-color: $color-primary-orange;
+    }
+  }
+}

@@ -2,6 +2,7 @@
 @import './styles/settings/fonts';
 @import './styles/settings/breakpoints';
 @import './styles/settings/colors';
+@import './styles/settings/settings';
 
 /// Functions
 @import './styles/functions/functions';
@@ -15,7 +16,9 @@
 @import './styles/base/global';
 
 /// Atoms
+@import './01-atoms/icons/index.scss';
 @import './01-atoms/logo/index.scss';
+@import './01-atoms/buttons/index.scss';
 @import './01-atoms/nav-link/index.scss';
 
 /// Molecules
