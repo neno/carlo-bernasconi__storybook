@@ -1,6 +1,7 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { dummyText } from '../../js/helpers';
+import { InlineLink } from '../links/link.stories';
 
 export default {
   title: '01-Atoms/Texts',
@@ -19,6 +20,8 @@ export const HeadingLevel3 = () => renderToStaticMarkup(heading(3));
 export const HeadingLevel4 = () => renderToStaticMarkup(heading(4));
 
 export const Paragraph = () => renderToStaticMarkup(<p>{dummyText}</p>);
+
+export const Link = () => InlineLink();
 
 export const UnorderedList = () =>
   renderToStaticMarkup(
