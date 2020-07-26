@@ -1,6 +1,6 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import Icon from '../icons';
+import Icon from '../icon';
 
 export default {
   title: '01-Atoms/Logo',

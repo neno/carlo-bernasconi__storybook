@@ -1,0 +1,25 @@
+.m-language-selector {
+  position: relative;
+  width: rem(44);
+
+  &__list {
+    list-style: none;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+
+    &[aria-hidden='true'] {
+      display: none;
+    }
+
+    &,
+    li {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .a-link {
+    white-space: nowrap;
+  }
+}

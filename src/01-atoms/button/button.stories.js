@@ -1,10 +1,17 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
-import Button from './Button';
+import Button from './index';
 
 export default {
   title: '01-Atoms/Buttons',
 };
+
+export const Default = () =>
+  renderToStaticMarkup(
+    <Button>
+      <span>DE</span>
+    </Button>
+  );
 
 export const Primary = () =>
   renderToStaticMarkup(

@@ -8,10 +8,16 @@ a,
   font-weight: 500;
   word-break: break-word;
   will-change: color, opacity;
+  user-select: none;
 
   &:hover,
   &:focus {
     color: $color-primary-orange;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+    pointer-events: none;
   }
 
   &--icon,
@@ -37,6 +43,8 @@ a,
   }
 
   &--lang {
+    @extend %button;
+
     display: block;
     padding: rem(10) rem(20);
     border-bottom: 1px solid $color-secondary-gray;
@@ -53,14 +61,34 @@ a,
     height: rem(50);
     line-height: rem(50);
     display: inline-flex;
-    flex-direction: column;
-    border: 1px solid $color-primary-blue;
+    align-items: center;
+    border: 1px solid $color-secondary-gray-light;
     background-color: $color-secondary-gray-light;
     border-radius: 50%;
     text-decoration: none;
+    will-change: color, border-color;
 
-    &--active {
-      background-color: $color-secondary-gray-light;
+    @include hover {
+      color: $color-primary-blue;
+      border: 1px solid $color-primary-blue;
+    }
+
+    &.a-link--active {
+      color: $color-primary-blue;
+      border: 1px solid $color-primary-blue;
+    }
+
+    span {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      position: relative;
+      width: 100%;
+    }
+
+    .a-ico {
+      margin-left: 0;
     }
   }
 }

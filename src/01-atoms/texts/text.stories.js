@@ -1,7 +1,7 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { dummyText } from '../../js/helpers';
-import { InlineLink } from '../links/link.stories';
+import { InlineLink } from '../link/link.stories';
 
 export default {
   title: '01-Atoms/Texts',

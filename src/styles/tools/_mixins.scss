@@ -39,3 +39,20 @@
   //   }
   // }
 }
+
+@mixin no-list() {
+  list-style: none;
+
+  &,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@mixin inline-list {
+  @include no-list();
+
+  display: inline-flex;
+  align-items: center;
+}
