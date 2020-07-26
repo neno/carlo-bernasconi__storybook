@@ -10,9 +10,16 @@ export default {
 export const InlineLink = () =>
   renderToStaticMarkup(<Link>Das ist ein inline Link</Link>);
 
-export const WithIcon = () =>
+export const IconLink = () =>
   renderToStaticMarkup(
     <Link classes={['a-link a-link--icon']}>
+      <Icon name='home' />
+    </Link>
+  );
+
+export const WithLabelIcon = () =>
+  renderToStaticMarkup(
+    <Link classes={['a-link a-link--lbl-icon']}>
       Link mit einem Icon
       <Icon name='arrow-right' />
     </Link>
@@ -20,7 +27,7 @@ export const WithIcon = () =>
 
 export const LinkListLink = () =>
   renderToStaticMarkup(
-    <Link classes={['a-link a-link--icon a-link--list']}>
+    <Link classes={['a-link a-link--lbl-icon a-link--list']}>
       Link innerhalb Linkliste
       <Icon name='arrow-right' />
     </Link>
@@ -28,7 +35,7 @@ export const LinkListLink = () =>
 
 export const LinkListLinkInverted = () =>
   renderToStaticMarkup(
-    <Link classes={['a-link a-link--icon a-link--list a-link--inverted']}>
+    <Link classes={['a-link a-link--lbl-icon a-link--list a-link--inverted']}>
       Link innerhalb Linkliste Invers
       <Icon name='arrow-right' />
     </Link>
@@ -36,7 +43,7 @@ export const LinkListLinkInverted = () =>
 
 export const LanguageLink = () =>
   renderToStaticMarkup(
-    <Link classes={['a-link a-link--icon a-link--lang']}>
+    <Link classes={['a-link a-link--lang']}>
       <abbr title='Deutsch'>de</abbr>
     </Link>
   );

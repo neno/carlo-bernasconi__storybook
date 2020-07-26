@@ -8,9 +8,7 @@ export default {
 
 export const Logo = () =>
   renderToStaticMarkup(
-    <div role='banner' className='a-logo'>
-      <a href='/' aria-label='Link to Homepage'>
-        <Icon name='logo' />
-      </a>
-    </div>
+    <a className='a-logo' href='/' aria-label='Link to Homepage'>
+      <Icon name='logo' />
+    </a>
   );

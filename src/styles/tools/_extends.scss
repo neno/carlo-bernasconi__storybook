@@ -19,35 +19,35 @@
 }
 
 %h1 {
-  font-size: rem(30);
+  font-size: $font-size-h1;
 
   @include media-breakpoint-up(large) {
-    font-size: rem(50);
+    font-size: $font-size-h1-large;
   }
 }
 
 %h2 {
-  font-size: rem(24);
+  font-size: $font-size-h2;
 
   @include media-breakpoint-up(large) {
-    font-size: rem(40);
+    font-size: $font-size-h2-large;
   }
 }
 
 %h3 {
-  font-size: rem(20);
+  font-size: $font-size-h3;
 
   @include media-breakpoint-up(large) {
-    font-size: rem(30);
+    font-size: $font-size-h3-large;
   }
 }
 
 %h4 {
-  font-size: rem(16);
+  font-size: $font-size-regular;
   line-height: 1.25;
 
   @include media-breakpoint-up(large) {
-    font-size: rem(20);
+    font-size: $font-size-regular-large;
     line-height: 1.2;
   }
 }
@@ -55,18 +55,18 @@
 %font-regular {
   font-family: $font-primary;
   font-weight: 400;
-  font-size: rem(16);
+  font-size: $font-size-regular;
   line-height: 1.25;
   margin-bottom: rem(20);
 
   @include media-breakpoint-up(large) {
-    font-size: rem(20);
+    font-size: $font-size-regular-large;
     line-height: 1.2;
   }
 }
 
 %button {
-  font-size: rem(20);
+  font-size: $font-size-regular-large;
   font-weight: 500;
   margin-bottom: 0;
 }

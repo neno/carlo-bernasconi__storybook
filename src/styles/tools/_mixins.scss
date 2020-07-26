@@ -40,7 +40,7 @@
   // }
 }
 
-@mixin no-list() {
+@mixin no-bullets() {
   list-style: none;
 
   &,
@@ -51,7 +51,7 @@
 }
 
 @mixin inline-list {
-  @include no-list();
+  @include no-bullets();
 
   display: inline-flex;
   align-items: center;

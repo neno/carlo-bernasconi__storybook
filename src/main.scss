@@ -1,11 +1,11 @@
+/// Functions
+@import './styles/functions/functions';
+
 /// Settings
 @import './styles/settings/fonts';
 @import './styles/settings/breakpoints';
 @import './styles/settings/colors';
 @import './styles/settings/settings';
-
-/// Functions
-@import './styles/functions/functions';
 
 /// Tools
 @import './styles/tools/mixins';
@@ -23,6 +23,7 @@
 @import './01-atoms/nav-link/index.scss';
 
 /// Molecules
+@import './02-molecules/breadcrumbs/index.scss';
 @import './02-molecules/language-selector/index.scss';
 @import './02-molecules/nav/index.scss';
 @import './02-molecules/pagination/index.scss';

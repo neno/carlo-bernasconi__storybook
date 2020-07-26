@@ -1,0 +1,40 @@
+.m-breadcrumbs {
+  @include inline-list;
+
+  align-items: flex-start;
+
+  &__list {
+    @include no-bullets;
+
+    li {
+      display: inline-flex;
+      align-items: flex-start;
+    }
+  }
+
+  &__link--home,
+  .a-link--icon,
+  .a-ico {
+    flex: 0 0 auto;
+  }
+
+  &__link {
+    margin-right: rem(8);
+    margin-left: rem(8);
+    text-decoration: none;
+
+    @include media-breakpoint-up(large) {
+      font-size: $font-size-regular;
+    }
+  }
+
+  &__link--home {
+    margin-left: 0;
+  }
+
+  .a-ico {
+    width: rem(16);
+    height: rem(16);
+    margin-top: rem(2);
+  }
+}

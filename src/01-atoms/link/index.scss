@@ -21,13 +21,25 @@ a,
     pointer-events: none;
   }
 
-  &--icon,
+  &--icon {
+    width: rem(20);
+    height: rem(20);
+
+    .a-ico {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &--lbl-icon,
   &--list {
     text-decoration: none;
   }
 
-  .a-ico {
-    margin-left: rem(16);
+  &--lbl-icon {
+    .a-ico {
+      margin-left: rem(16);
+    }
   }
 
   &--list {
