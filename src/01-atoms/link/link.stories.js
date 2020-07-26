@@ -41,6 +41,16 @@ export const LanguageLink = () =>
     </Link>
   );
 
+export const NavLink = () =>
+  renderToStaticMarkup(
+    <Link classes={['a-link a-link--nav']}>Kompetenzen</Link>
+  );
+
+export const NavLinkActive = () =>
+  renderToStaticMarkup(
+    <Link classes={['a-link a-link--nav a-link--active']}>Kompetenzen</Link>
+  );
+
 export const PaginationLink = () =>
   renderToStaticMarkup(
     <Link classes={['a-link a-link--pagination']}>

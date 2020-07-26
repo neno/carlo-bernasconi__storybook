@@ -1,0 +1,11 @@
+.m-pagination {
+  text-align: center;
+
+  &__list {
+    @include inline-list;
+  }
+
+  .a-link {
+    margin: 0 rem(5);
+  }
+}
