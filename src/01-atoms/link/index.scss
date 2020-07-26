@@ -77,6 +77,7 @@ a,
     margin: 0;
     text-decoration: none;
     color: $color-primary-blue;
+    font-size: $font-size-regular-large;
 
     @include media-breakpoint-up(large) {
       margin-right: rem(40);
