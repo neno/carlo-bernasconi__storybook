@@ -17,7 +17,7 @@ const LanguageSelector = ({ languages, currentLang, status }) => (
       {languages.map((lang) =>
         Object.keys(lang).map((key) => (
           <li key={key}>
-            <Link classes={['a-link a-link--icon a-link--lang']}>
+            <Link classes={['a-link a-link--lang']}>
               <abbr title={lang[key]}>{key}</abbr>
             </Link>
           </li>
