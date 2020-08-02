@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Link = ({ children, classes = [], url = '#', attr = {} }) => {
-  const cls = [...classes];
+  const cls = ['a-link', ...classes];
   return (
     <a href={url} className={cls.join(' ')} {...attr}>
       {children}

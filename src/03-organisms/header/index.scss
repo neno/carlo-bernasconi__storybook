@@ -1,0 +1,41 @@
+.o-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  .a-logo {
+    flex: 0 0 auto;
+  }
+
+  &--active &__nav {
+    transform: translateX(0);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 0;
+    top: $logo-height;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform $transition-time-default;
+
+
+
+    @include media-breakpoint-up(large) {
+      display: inline-flex;
+      flex-direction: row;
+      position: relative;
+      top: 0;
+
+      .a-link--search {
+        margin-left: rem(16);
+      }
+    }
+  }
+
+  .a-btn--menu {
+    margin-left: rem(16);
+  }
+}

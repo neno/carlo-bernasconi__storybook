@@ -14,6 +14,7 @@
 /// basic styles
 @import './styles/base/typo';
 @import './styles/base/global';
+@import './styles/layout/layout';
 
 /// Atoms
 @import './01-atoms/icon/index.scss';
@@ -24,6 +25,12 @@
 
 /// Molecules
 @import './02-molecules/breadcrumbs/index.scss';
+@import './02-molecules/footer-section/index.scss';
 @import './02-molecules/language-selector/index.scss';
+@import './02-molecules/link-list/index.scss';
 @import './02-molecules/nav/index.scss';
 @import './02-molecules/pagination/index.scss';
+
+/// Organisms
+@import './03-organisms/footer/index.scss';
+@import './03-organisms/header/index.scss';

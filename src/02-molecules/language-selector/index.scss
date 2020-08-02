@@ -1,6 +1,11 @@
 .m-language-selector {
   position: relative;
-  width: rem(44);
+  margin: rem(20) 0;
+
+  @include media-breakpoint-up(large) {
+    margin: 0;
+    width: rem(44);
+  }
 
   &__list {
     list-style: none;

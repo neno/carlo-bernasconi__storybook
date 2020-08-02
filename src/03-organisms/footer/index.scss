@@ -1,0 +1,44 @@
+.o-footer {
+  padding: rem(20) 0;
+  color: $color-primary-white;
+  background-color: $color-primary-blue;
+
+  &__sections {
+    padding: rem(20) 0;
+
+    @include media-breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-gap: rem(30);
+    }
+  }
+
+  &__bottom {
+    p,
+    ul {
+      @extend %font-small;
+    }
+
+    padding-top: rem(20);
+    padding-bottom: rem(40);
+    border-top: 1px solid $color-primary-orange;
+
+    @include media-breakpoint-up(large) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+    }
+
+    .m-link-list {
+      @include media-breakpoint-up(large) {
+        @include h-list;
+      }
+    }
+  }
+
+  &__copyright {
+    margin: 0;
+    padding: rem(5) 0;
+  }
+}

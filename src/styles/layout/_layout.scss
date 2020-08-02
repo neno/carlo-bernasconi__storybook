@@ -1,0 +1,15 @@
+.l-constrainer {
+  padding: 0 rem(15);
+  margin: 0 auto;
+
+  @include media-breakpoint-up(medium) {
+    padding-right: rem(28);
+    padding-left: rem(28);
+  }
+
+  @include media-breakpoint-up(large) {
+    padding-right: 0;
+    padding-left: 0;
+    max-width: rem(2000);
+  }
+}

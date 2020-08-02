@@ -21,6 +21,15 @@ a,
     pointer-events: none;
   }
 
+  &--footer {
+    text-decoration: none;
+    color: $color-primary-white;
+    color: $color-primary-white;
+    background-color: $color-primary-blue;
+    display: block;
+    padding: rem(5) 0;
+  }
+
   &--icon {
     width: rem(20);
     height: rem(20);
@@ -64,6 +73,7 @@ a,
     text-transform: uppercase;
     text-decoration: none;
     will-change: color, background-color;
+    white-space: nowrap;
 
     @include hover {
       background-color: $color-secondary-gray-light;
@@ -79,6 +89,7 @@ a,
     text-decoration: none;
     color: $color-primary-blue;
     font-size: $font-size-regular-large;
+    white-space: nowrap;
 
     @include media-breakpoint-up(large) {
       margin-right: rem(40);

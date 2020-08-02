@@ -12,7 +12,7 @@ const LanguageSelector = ({ languages, currentLang, status }) => (
     </Button>
     <ul
       className='m-language-selector__list'
-      aria-hidden={status === 'collapsed' ? true : false}
+      aria-hidden={status === 'expanded' ? false : true}
     >
       {languages.map((lang) =>
         Object.keys(lang).map((key) => (

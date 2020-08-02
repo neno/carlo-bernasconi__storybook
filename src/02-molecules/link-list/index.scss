@@ -1,0 +1,7 @@
+.m-link-list {
+  @include no-bullets;
+
+  &--horizontal {
+    @include h-list;
+  }
+}

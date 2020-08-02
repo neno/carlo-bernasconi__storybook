@@ -3,6 +3,7 @@
     list-style: none;
     display: flex;
     flex-direction: column;
+    // justify-content: space-between;
 
     @include media-breakpoint-up(large) {
       flex-direction: row;

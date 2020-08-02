@@ -57,7 +57,6 @@
   font-weight: 400;
   font-size: $font-size-regular;
   line-height: 1.25;
-  margin-bottom: rem(20);
 
   @include media-breakpoint-up(large) {
     font-size: $font-size-regular-large;
@@ -65,8 +64,21 @@
   }
 }
 
+%font-small {
+  @extend %font-regular;
+
+  @include media-breakpoint-up(large) {
+    font-size: $font-size-regular;
+    line-height: 1.25;
+  }
+}
+
 %button {
   font-size: $font-size-regular-large;
   font-weight: 500;
   margin-bottom: 0;
+}
+
+%block-margin {
+  margin-bottom: rem(20);
 }
