@@ -1,6 +1,25 @@
 .m-teaser {
+  .a-img + * {
+    margin-top: rem(20);
+  }
   strong {
     display: block;
-    margin: rem(20) 0 rem(40) 0;
+    margin-bottom: rem(40);
+  }
+
+  &--bg-gray,
+  &--bg-white {
+    > *:not(.a-img) {
+      padding-right: rem(20);
+      padding-left: rem(20);
+    }
+  }
+
+  &--bg-white {
+    background-color: $color-primary-white;
+  }
+
+  &--bg-gray {
+    background-color: $color-secondary-gray-light;
   }
 }

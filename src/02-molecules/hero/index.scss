@@ -1,13 +1,10 @@
 .m-hero {
-  padding-bottom: rem(20);
-
   &__image .a-img {
     padding-top: $aspect-ratio-hero;
   }
 
   .m-hero__breadcrumbs {
     padding-top: rem(20);
-    padding-bottom: rem(20);
   }
 
   @include media-breakpoint-up(large) {

@@ -1,1 +1,42 @@
 $grid-gutter: 30px;
+
+.l-grid {
+  display: grid;
+
+  grid-template-rows: auto;
+  grid-gap: $grid-gutter;
+
+  &--1 {
+    grid-template-columns: 1fr;
+  }
+
+  &--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &--4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.l-col,
+.l-col--1 {
+  grid-column: auto;
+  grid-row: auto;
+}
+
+.l-col--2 {
+  grid-column: auto / span 2;
+}
+
+.l-col--3 {
+  grid-column: auto / span 3;
+}
+
+.l-col--4 {
+  grid-column: auto / span 4;
+}

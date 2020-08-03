@@ -28,9 +28,11 @@
 
 %h2 {
   font-size: $font-size-h2;
+  margin-bottom: rem(25);
 
   @include media-breakpoint-up(large) {
     font-size: $font-size-h2-large;
+    margin-bottom: rem(30);
   }
 }
 
@@ -80,5 +82,5 @@
 }
 
 %block-margin {
-  margin-bottom: rem(20);
+  margin: 0 0 rem(20) 0;
 }

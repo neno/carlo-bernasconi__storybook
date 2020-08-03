@@ -1,0 +1,12 @@
+.a-highlight {
+  padding: rem(20);
+
+  &--gray {
+    background-color: $color-secondary-gray-light;
+  }
+
+  &--blue {
+    background-color: $color-primary-blue;
+    color: $color-primary-white;
+  }
+}

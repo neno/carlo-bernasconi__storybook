@@ -1,6 +1,4 @@
 import React from "react"
-import Header from "../../03-organisms/header"
-import Footer from "../../03-organisms/footer"
 import Hero from "../../02-molecules/hero/"
 import { heroData } from "../../02-molecules/hero/stories/hero.data"
 import { pictureData } from "../../01-atoms/picture/stories/picture.data"

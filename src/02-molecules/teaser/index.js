@@ -1,12 +1,12 @@
-import React from 'react';
-import Image from '../../01-atoms/image';
+import React from "react"
+import Image from "../../01-atoms/image"
 
-
-const Teaser = ({ imageData, title, classes = [] }) => (
-  <div className={`m-teaser ${classes.join(' ')}`}>
-    <Image {...imageData} classes={['a-img--ratio-teaser']} />
-    <strong>{title}</strong>
+const Teaser = ({ imageData, title, text, classes = [] }) => (
+  <div className={`m-teaser ${classes.join(" ")}`}>
+    <Image {...imageData} classes={["a-img--ratio-teaser"]} />
+    {title && <strong>{title}</strong>}
+    {text && <p>{text}</p>}
   </div>
-);
+)
 
-export default Teaser;
+export default Teaser
