@@ -7,12 +7,13 @@ const Image = ({
   sizes = '100vw',
   focusPoint = false,
   alt = 'Demo alt-text',
+  classes = []
 }) => {
   const base64gif =
     'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
 
   return (
-    <span className={`a-img`}>
+    <span className={`a-img ${classes.join(' ')}`}>
       <img
         data-image='image'
         data-src={dataSrc}
