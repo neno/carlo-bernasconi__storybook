@@ -1,5 +1,5 @@
 .o-overview-teasers {
-  @include media-breakpoint-up(large) {
+  @include media-breakpoint-up(medium) {
     margin: rem(60) 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
