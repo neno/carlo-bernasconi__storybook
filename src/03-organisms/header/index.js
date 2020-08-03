@@ -11,7 +11,7 @@ import { languagesData } from '../../02-molecules/language-selector/stories/lang
 const Header = ({ isActive }) => (
   <div className={`o-header${isActive === 'true' ? ' o-header--active' : ''}`}>
     <Logo />
-    <div>
+    <div className="o-header__links">
       <div className="o-header__nav" aria-visible={isActive} aria-controlled-by={isActive && 'menu-button'}>
         <Nav items={navItems()} />
         <LanguageSelector

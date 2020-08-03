@@ -2,6 +2,11 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  padding: rem(15);
+
+  @include media-breakpoint-up(large) {
+    padding: rem(40) rem(50);
+  }
 
   .a-logo {
     flex: 0 0 auto;
@@ -9,6 +14,12 @@
 
   &--active &__nav {
     transform: translateX(0);
+  }
+
+  .o-header__links {
+    @include media-breakpoint-up(large) {
+      display: flex;
+    }
   }
 
   &__nav {
@@ -28,6 +39,7 @@
       flex-direction: row;
       position: relative;
       top: 0;
+      transform: translateX(0);
 
       .a-link--search {
         margin-left: rem(16);

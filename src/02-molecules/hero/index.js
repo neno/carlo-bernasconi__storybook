@@ -3,10 +3,10 @@ import Picture from '../../01-atoms/picture';
 import Breadcrumbs from '../breadcrumbs';
 import { pictureData } from '../../01-atoms/picture/stories/picture.data';
 
-const Hero = ({ imageData, title, text, breadcrumbItems, classes = [] }) => (
+const Hero = ({ data = pictureData, title, text, breadcrumbItems, classes = [] }) => (
   <header className={`m-hero ${classes.join(' ')}`}>
     <div className="m-hero__image">
-      <Picture {...pictureData} classes={['a-img--ratio-hero']} />
+      <Picture {...data} classes={['a-img--ratio-hero']} />
     </div>
 
     <div className="m-hero__breadcrumbs">
@@ -23,8 +23,6 @@ const Hero = ({ imageData, title, text, breadcrumbItems, classes = [] }) => (
         </div>
       </div>
     </div>
-
-
   </header>
 );
 
