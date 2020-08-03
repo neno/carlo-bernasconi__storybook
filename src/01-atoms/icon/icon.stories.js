@@ -32,7 +32,9 @@ export const Home = () => renderToStaticMarkup(<Icon name='home' />);
 
 export const Instagram = () => renderToStaticMarkup(<Icon name='instagram' />);
 
-export const Logo = () => renderToStaticMarkup(<Icon name='logo' />);
+export const LogoDe = () => renderToStaticMarkup(<Icon name='logo-de' />);
+
+export const LogoFr = () => renderToStaticMarkup(<Icon name='logo-fr' />);
 
 export const Mail = () => renderToStaticMarkup(<Icon name='mail' />);
 
