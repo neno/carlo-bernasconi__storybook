@@ -1,15 +1,71 @@
-.l-constrainer {
-  padding: 0 rem(15);
-  margin: 0 auto;
+$offsetCurve: (
+  zero: rem(15),
+  micro: rem(15),
+  small: rem(15),
+  medium: rem(28),
+  wide: 0,
+  ultra: 0
+);
+
+$maxWidthCurve: (
+  zero: calc(100% - 2 * #{map-get($offsetCurve, 'zero')}),
+  micro: calc(100% - 2 * #{map-get($offsetCurve, 'micro')}),
+  small: calc(100% - 2 * #{map-get($offsetCurve, 'small')}),
+  medium: calc(100% - 2 * #{map-get($offsetCurve, 'medium')}),
+  wide: rem(1134),
+  ultra: rem(1248)
+);
+
+@mixin constrainer {
+  max-width: map-get($maxWidthCurve, 'zero');
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-breakpoint-up(micro) {
+    max-width: map-get($maxWidthCurve, 'micro');
+    // background-color: lightblue;
+  }
+
+  @include media-breakpoint-up(small) {
+    max-width: map-get($maxWidthCurve, 'small');
+    // background-color: lightcoral;
+  }
 
   @include media-breakpoint-up(medium) {
-    padding-right: rem(28);
-    padding-left: rem(28);
+    max-width: map-get($maxWidthCurve, 'medium');
+    // background-color: lightgreen;
   }
 
-  @include media-breakpoint-up(large) {
-    padding-right: 0;
-    padding-left: 0;
-    max-width: rem(2000);
+  @include media-breakpoint-up(wide) {
+    max-width: map-get($maxWidthCurve, 'wide');
+    // background-color: lightpink;
   }
+
+  @include media-breakpoint-up(ultra) {
+    max-width: map-get($maxWidthCurve, 'ultra');
+    // background-color: lightskyblue;
+  }
+}
+
+$maxWidthCurveFull: (
+  zero: 100%,
+  ultra: 1920px
+);
+
+.l-constrainer {
+  // padding: 0 rem(15);
+  // margin: 0 auto;
+
+  // @include media-breakpoint-up(medium) {
+  //   padding-right: rem(28);
+  //   padding-left: rem(28);
+  // }
+
+  // @include media-breakpoint-up(large) {
+  //   padding-right: 0;
+  //   padding-left: 0;
+  //   max-width: rem(2000);
+  // }
+  @include constrainer;
 }
