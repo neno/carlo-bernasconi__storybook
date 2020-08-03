@@ -10,7 +10,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Küchenabdeckungen"
   },
@@ -25,7 +25,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Bodenbeläge und Treppen (Innen)"
   },
@@ -40,7 +40,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Bodenbeläge und Treppen (Aussen)"
   },
@@ -55,7 +55,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Elementbau (Innen)"
   },
@@ -70,7 +70,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Elementbau (Aussen)"
   },
@@ -85,7 +85,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Fassaden"
   },
@@ -100,7 +100,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Gärten"
   },
@@ -115,7 +115,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Grabsteine"
   },
@@ -130,7 +130,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Berner Sandstein"
   },
@@ -145,7 +145,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Oberflächenbearbeitung"
   },
@@ -160,7 +160,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Badezimmer"
   },
@@ -175,7 +175,7 @@ export const teaserData = [
     `,
       dataSrc: "https://placehold.it/358x260",
       src: "https://placehold.it/358x260",
-      sizes: "(min-width: 960px) 30vw, 100vw"
+      sizes: "(min-width: 720px) 30vw, 100vw"
     },
     title: "Wasseraufbereitung & Abwassertechnik"
   }
