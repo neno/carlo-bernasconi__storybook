@@ -1,11 +1,11 @@
-import React from 'react';
-import { renderToStaticMarkup } from 'react-dom/server';
-import Image from './index';
+import React from "react"
+import { renderToStaticMarkup } from "react-dom/server"
+import Image from "../index"
 
 export default {
-  title: '01-Atoms/Images',
-  excludeStories: /.*Data$/,
-};
+  title: "01-Atoms/Images",
+  excludeStories: /.*Data$/
+}
 
 export const imageData = {
   dataSrcset: `
@@ -17,9 +17,9 @@ export const imageData = {
     https://placehold.it/1600x900 1600w,
     https://placehold.it/2000x1125 2000w
   `,
-  dataSrc: 'https://placehold.it/1600x900',
-  src: 'https://placehold.it/1600x900',
-};
+  dataSrc: "https://placehold.it/1600x900",
+  src: "https://placehold.it/1600x900"
+}
 
 export const pictureData = {
   dataSrcset: `
@@ -31,8 +31,8 @@ export const pictureData = {
     https://placehold.it/1600x900.webp 1600w,
     https://placehold.it/2000x1125.webp 2000w
   `,
-  dataSrc: 'https://placehold.it/1600x900.webp',
-  src: 'https://placehold.it/1600x900.webp',
-};
+  dataSrc: "https://placehold.it/1600x900.webp",
+  src: "https://placehold.it/1600x900.webp"
+}
 
-export const image = () => renderToStaticMarkup(<Image {...imageData} />);
+export const image = () => renderToStaticMarkup(<Image {...imageData} />)

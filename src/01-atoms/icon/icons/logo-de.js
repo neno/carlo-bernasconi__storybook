@@ -15,7 +15,7 @@ const LogoDe = () => (
     </defs>
     <g
       id="carlo-ag_de_logo_rgb_tr"
-      clip-path="url(#clip-carlo-ag_de_logo_rgb_tr)"
+      clipPath="url(#clip-carlo-ag_de_logo_rgb_tr)"
     >
       <g id="carlo-ag_de_logo_rgb" transform="translate(-127.28 -219.84)">
         <g id="Gruppe_1" data-name="Gruppe 1">
@@ -152,7 +152,7 @@ const LogoDe = () => (
             data-name="Pfad 22"
             d="M471.4,233.33l-21.11-.04-20.22.02c-14.38,0-27.41,8.8-27.41,24.32,0,15.63,13.03,24.52,28.24,24.52h38.79c15.2,0,28.23-8.89,28.23-24.52C497.91,242.1,484.88,233.3,471.4,233.33Zm-.73,26.36H429.88v-4.88h40.79Z"
             fill="#003da5"
-            fill-rule="evenodd"
+            fillRule="evenodd"
           />
         </g>
       </g>

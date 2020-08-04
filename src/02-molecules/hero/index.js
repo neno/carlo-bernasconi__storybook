@@ -1,12 +1,18 @@
-import React from 'react';
-import Picture from '../../01-atoms/picture';
-import Breadcrumbs from '../breadcrumbs';
-import { pictureData } from '../../01-atoms/picture/stories/picture.data';
+import React from "react"
+import Picture from "../../01-atoms/picture"
+import Breadcrumbs from "../breadcrumbs"
+import { pictureData } from "../../01-atoms/picture/stories/picture.data"
 
-const Hero = ({ data = pictureData, title, text, breadcrumbItems, classes = [] }) => (
-  <header className={`m-hero ${classes.join(' ')}`}>
+const Hero = ({
+  data = pictureData,
+  title,
+  text,
+  breadcrumbItems,
+  classes = []
+}) => (
+  <header className={`m-hero l-constrainer-full ${classes.join(" ")}`}>
     <div className="m-hero__image">
-      <Picture {...data} classes={['a-img--ratio-hero']} />
+      <Picture {...data} classes={["a-img--ratio-hero"]} />
     </div>
 
     <div className="m-hero__breadcrumbs">
@@ -24,6 +30,6 @@ const Hero = ({ data = pictureData, title, text, breadcrumbItems, classes = [] }
       </div>
     </div>
   </header>
-);
+)
 
-export default Hero;
+export default Hero

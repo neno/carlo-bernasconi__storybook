@@ -50,8 +50,20 @@ $maxWidthCurve: (
 
 $maxWidthCurveFull: (
   zero: 100%,
-  ultra: 1920px
+  ultra: rem(2500)
 );
+
+@mixin maxWidthCurveFull {
+  max-width: map-get($maxWidthCurveFull, "zero");
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media-breakpoint-up(ultra) {
+    max-width: map-get($maxWidthCurveFull, "ultra");
+    // background-color: lightskyblue;
+  }
+}
 
 .l-component {
   padding-bottom: rem(60);
@@ -64,4 +76,8 @@ $maxWidthCurveFull: (
 
 .l-constrainer {
   @include constrainer;
+}
+
+.l-constrainer-full {
+  @include maxWidthCurveFull;
 }
