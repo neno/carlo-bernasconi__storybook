@@ -33,20 +33,10 @@ const DetailTemplate = () => (
         </div>
       </div>
     </div>
-    <div className="l-component"></div>
     <div className="l-component">
       <div className="l-constrainer">
-        <div className="l-grid l-grid--3">
-          <div className="l-col l-col--1">
-            <Teaser
-              imageData={{
-                ...teaserData[0].img,
-                classes: ["a-img--ratio-1-3"]
-              }}
-              title={teaserData[0].title}
-            />
-          </div>
-          <div className="l-col l-col--2">
+        <div className="l-grid l-grid--4">
+          <div className="l-col l-col--3">
             <Teaser imageData={teaserData[1].img} title={teaserData[1].title} />
           </div>
         </div>
