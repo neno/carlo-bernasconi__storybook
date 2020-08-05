@@ -76,6 +76,12 @@ $maxWidthCurveFull: (
 
 .l-constrainer {
   @include constrainer;
+
+  > {
+    h1,h2,h3,h4,p,ul,ol {
+      width: colWidth(3, 4);
+    }
+  }
 }
 
 .l-constrainer-full {

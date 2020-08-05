@@ -18,19 +18,14 @@ const DetailTemplate = () => (
         breadcrumbItems={heroDataDetail.breadcrumbItems}
       />
     </div>
-
     <div className="l-component">
       <div className="l-constrainer">
-        <div className="l-grid l-grid--4">
-          <div className="l-col l-col--3">
-            <p>
-              Mit unseren Steinen lassen sich alle Bereiche verschönern.
-              ...Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-              diam nonumy eirmod tempor invidunt ut labore et dolore magna
-              aliquyam erat, sed diam voluptua.
-            </p>
-          </div>
-        </div>
+        <p>
+          Mit unseren Steinen lassen sich alle Bereiche verschönern.
+          ...Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+          diam nonumy eirmod tempor invidunt ut labore et dolore magna
+          aliquyam erat, sed diam voluptua.
+        </p>
       </div>
     </div>
     <div className="l-component">
@@ -44,25 +39,21 @@ const DetailTemplate = () => (
     </div>
     <div className="l-component">
       <div className="l-constrainer">
-        <div className="l-grid l-grid--4">
-          <div className="l-col l-col--3">
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur
-              sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
-              et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum
-              dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-              eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-              sed diam voluptua.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat.
-            </p>
-          </div>
-        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+          et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum
+          dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+          sed diam voluptua.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+          nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+          erat.
+        </p>
       </div>
     </div>
 
