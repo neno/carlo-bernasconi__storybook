@@ -3,6 +3,10 @@
     padding-top: $aspect-ratio-hero;
   }
 
+  h1 {
+    word-break: break-all;
+  }
+
   .m-hero__breadcrumbs {
     padding-top: rem(20);
   }
