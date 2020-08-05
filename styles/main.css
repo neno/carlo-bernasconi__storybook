@@ -347,6 +347,7 @@ abbr {
   align-items: center;
   z-index: 1;
   position: relative;
+  pointer-events: none;
 }
 .a-btn--primary {
   background-color: #243b47;
@@ -762,6 +763,10 @@ span.a-link {
   margin: 0 0.3125rem;
 }
 
+.m-teaser__link {
+  display: block;
+  text-decoration: none;
+}
 .m-teaser .a-img + * {
   margin-top: 1.25rem;
 }
@@ -769,7 +774,9 @@ span.a-link {
   display: block;
   margin-bottom: 2.5rem;
 }
-.m-teaser--bg-gray > *:not(.a-img), .m-teaser--bg-white > *:not(.a-img) {
+.m-teaser--bg-gray strong,
+.m-teaser--bg-gray p, .m-teaser--bg-white strong,
+.m-teaser--bg-white p {
   padding-right: 1.25rem;
   padding-left: 1.25rem;
 }
@@ -882,8 +889,16 @@ span.a-link {
   margin-left: 1rem;
 }
 
+.o-teasers-grid {
+  list-style: none;
+}
+.o-teasers-grid,
+.o-teasers-grid li {
+  margin: 0;
+  padding: 0;
+}
 @media (min-width: 45em) {
-  .o-overview-teasers {
+  .o-teasers-grid {
     margin: 3.75rem 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -1,8 +1,8 @@
 .m-teaser {
-  &__link {
-    display: block;
-    text-decoration: none;
-  }
+  display: block;
+  text-decoration: none;
+  position: relative;
+  height: 100%;
 
   .a-img + * {
     margin-top: rem(20);
