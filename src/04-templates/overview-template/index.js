@@ -2,8 +2,8 @@ import React from "react"
 import Hero from "../../02-molecules/hero/"
 import { heroData } from "../../02-molecules/hero/stories/hero.data"
 import { pictureData } from "../../01-atoms/picture/stories/picture.data"
-import OverviewTeasers from "../../03-organisms/overview-teasers/index"
-import { teaserData } from "../../03-organisms/overview-teasers/stories/overview-teasers.data"
+import TeasersGrid from "../../03-organisms/teasers-grid/index"
+import { teaserData } from "../../03-organisms/teasers-grid/stories/teasers-grid.data"
 import RichText from "../../01-atoms/rich-text"
 import Layout from "../layout"
 
@@ -27,7 +27,7 @@ const OverviewTemplate = () => (
       </RichText>
     </div>
     <div className="l-constrainer">
-      <OverviewTeasers teasers={teaserData} />
+      <TeasersGrid teasers={teaserData} />
     </div>
   </Layout>
 )

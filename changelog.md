@@ -13,3 +13,4 @@
 ### m-hero:
 
 - add css class 'l-constrainer-full'
+- wrap the component with `<div class="l-component">`

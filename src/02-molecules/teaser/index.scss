@@ -1,4 +1,9 @@
 .m-teaser {
+  &__link {
+    display: block;
+    text-decoration: none;
+  }
+
   .a-img + * {
     margin-top: rem(20);
   }
@@ -9,7 +14,8 @@
 
   &--bg-gray,
   &--bg-white {
-    > *:not(.a-img) {
+    strong,
+    p {
       padding-right: rem(20);
       padding-left: rem(20);
     }

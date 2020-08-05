@@ -2,8 +2,6 @@ import React from "react"
 import Hero from "../../02-molecules/hero"
 import { heroDataDetail } from "../../02-molecules/hero/stories/hero.data"
 import { pictureData } from "../../01-atoms/picture/stories/picture.data"
-import OverviewTeasers from "../../03-organisms/overview-teasers/index"
-import { teaserData } from "../../03-organisms/overview-teasers/stories/overview-teasers.data"
 import RichText from "../../01-atoms/rich-text"
 import Layout from "../layout"
 import AnyQuestions from "../../02-molecules/any-questions"
@@ -29,6 +27,12 @@ const DetailTemplate = () => (
             diam voluptua.
           </p>
         </RichText>
+      </div>
+    </div>
+    <div className="l-component">
+      <div className="l-grid l-grid--3">
+        <div className="l-col l-col--1"></div>
+        <div className="l-col l-col--2"></div>
       </div>
     </div>
     <div className="l-component">

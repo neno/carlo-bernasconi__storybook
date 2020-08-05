@@ -4,6 +4,9 @@ import RichText from "../../01-atoms/rich-text"
 import Teaser from "../../02-molecules/teaser"
 import { teaserData } from "./stories/good-to-know.data"
 
+import TeasersGrid from "../teasers-grid/index"
+// import { teaserData } from "../../03-organisms/teasers-grid/stories/teasers-grid.data"
+
 const GoToKnow = () => (
   <aside className="o-good-to-know">
     <Highlight classes={["a-highlight--gray o-good-to-know__highlight"]}>
@@ -18,17 +21,10 @@ const GoToKnow = () => (
           </RichText>
         </div>
         <div className="l-component">
-          <div className="o-good-to-know__teasers">
-            {teaserData &&
-              teaserData.map(teaser => (
-                <Teaser
-                  key={encodeURIComponent(teaser.title)}
-                  imageData={teaser.img}
-                  text={teaser.text}
-                  classes={["m-teaser--bg-white"]}
-                />
-              ))}
-          </div>
+          <TeasersGrid
+            teasers={teaserData}
+            teaserClasses={["m-teaser--bg-white"]}
+          />
         </div>
       </div>
     </Highlight>
