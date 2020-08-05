@@ -10,17 +10,19 @@ import TeasersGrid from "../teasers-grid/index"
 const GoToKnow = () => (
   <aside className="o-good-to-know">
     <Highlight classes={["a-highlight--gray o-good-to-know__highlight"]}>
-      <div className="l-constrainer">
-        <h2>Gut zu Wissen</h2>
-        <div className="l-component">
-          <RichText>
+      <div className="l-component">
+        <div className="l-constrainer">
+          <h2>Gut zu Wissen</h2>
+          <p>
             Mit unseren Steinen lassen sich alle Bereiche verschönern. ...Lorem
             ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
             eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
             diam voluptua.
-          </RichText>
+          </p>
         </div>
-        <div className="l-component">
+      </div>
+      <div className="l-component">
+        <div className="l-constrainer">
           <TeasersGrid
             teasers={teaserData}
             teaserClasses={["m-teaser--bg-white"]}
