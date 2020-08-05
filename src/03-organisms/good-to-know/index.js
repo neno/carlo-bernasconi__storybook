@@ -23,10 +23,17 @@ const GoToKnow = () => (
       </div>
       <div className="l-component">
         <div className="l-constrainer">
-          <TeasersGrid
-            teasers={teaserData}
-            teaserClasses={["m-teaser--bg-white"]}
-          />
+          <div className="l-grid l-grid--3">
+            <div className="l-col">
+              <Teaser imageData={teaserData[0].img} text={teaserData[0].text} classes={["m-teaser--bg-white"]}/>
+            </div>
+            <div className="l-col">
+              <Teaser imageData={teaserData[1].img} text={teaserData[1].text} classes={["m-teaser--bg-white"]}/>
+            </div>
+            <div className="l-col">
+              <Teaser imageData={teaserData[2].img} text={teaserData[2].text} classes={["m-teaser--bg-white"]}/>
+            </div>
+          </div>
         </div>
       </div>
     </Highlight>
