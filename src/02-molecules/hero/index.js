@@ -24,8 +24,12 @@ const Hero = ({
     <div className="m-hero__text">
       <div className="l-constrainer">
         <div className="m-hero__inner">
-          <h1>{title}</h1>
-          <p>{text}</p>
+          <div className="l-component">
+            <div className="l-constrainer">
+              <h1>{title}</h1>
+              <p>{text}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

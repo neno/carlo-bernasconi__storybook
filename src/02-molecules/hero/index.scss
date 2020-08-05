@@ -31,7 +31,7 @@
       grid-row: 1;
       z-index: 2;
 
-      .l-constrainer {
+      > .l-constrainer {
         height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);

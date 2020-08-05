@@ -68,6 +68,10 @@ $maxWidthCurveFull: (
 .l-component {
   padding-bottom: rem(60);
 
+  .l-component {
+    padding-bottom: 0;
+  }
+
   > * .l-constrainer > * {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -77,9 +81,19 @@ $maxWidthCurveFull: (
 .l-constrainer {
   @include constrainer;
 
+  .l-constrainer {
+    max-width: 100%;
+  }
+
   > {
     h1,h2,h3,h4,p {
       width: colWidth(3, 4);
+    }
+  }
+
+  .l-constrainer {
+    h1,h2,h3,h4,p {
+      width: 100%;
     }
   }
 }
