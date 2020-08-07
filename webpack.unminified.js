@@ -1,8 +1,8 @@
 const path = require("path")
-const merge = require("webpack-merge")
+const { merge } = require("webpack-merge")
 const common = require("./webpack.common")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
-const CleanWebpackPlugin = require("clean-webpack-plugin")
+const { CleanWebpackPlugin } = require("clean-webpack-plugin")
 
 module.exports = env =>
   merge(common(env), {
@@ -37,7 +37,7 @@ module.exports = env =>
     plugins: [
       new MiniCssExtractPlugin({
         path: path.resolve(__dirname, "./dist"),
-        filename: path.join("./styles", "[name].[chunkhash].css")
+        filename: path.join("../styles", "[name].[chunkhash].css")
       }),
       new CleanWebpackPlugin()
     ],

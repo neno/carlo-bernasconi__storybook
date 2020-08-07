@@ -14,7 +14,7 @@
 //     console.log("Hello From main.js")
 //   }, 2000)
 // })()
-
+import "../styles/index.scss"
 import { initToggle } from "./libs/Toggle"
 
 setTimeout(() => {
