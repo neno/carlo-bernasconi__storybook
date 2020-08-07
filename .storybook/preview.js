@@ -1,6 +1,6 @@
-import "../src/styles/main.scss"
+import "../src/styles/index.scss"
 import "../src/styles/preview.scss"
-import "../src/js/main.js"
+import "../src/js/index.js"
 
 import { addDecorator } from "@storybook/html"
 import { withA11y } from "@storybook/addon-a11y"
