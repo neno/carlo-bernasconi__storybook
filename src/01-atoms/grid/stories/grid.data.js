@@ -8,7 +8,7 @@ export const gridData2 = {
 export const gridData = {
   "1111": {
     grid: 4,
-    cols: [1, 1, 1, 1]
+    cols: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
   },
   "112": {
     grid: 4,
@@ -40,7 +40,7 @@ export const gridData = {
   },
   "111": {
     grid: 3,
-    cols: [1, 1, 1]
+    cols: [1, 1, 1, 1, 1, 1]
   },
   "12": {
     grid: 3,

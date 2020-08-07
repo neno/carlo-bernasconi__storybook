@@ -2,9 +2,21 @@
   @include no-bullets;
 
   @include media-breakpoint-up(medium) {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: $grid-gutter;
+    // BEGIN IE11 fallback
+    @include grid-fallback($grid-gutter);
+    @include grid-fallback-cols(3, $grid-gutter, "li");
+    // END IE11 fallback
+
+    @supports (display: grid) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: $grid-gutter;
+
+      li {
+        width: 100%;
+        margin: 0;
+      }
+    }
 
     strong {
       margin-bottom: rem(10);

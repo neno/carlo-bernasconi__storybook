@@ -2,14 +2,19 @@ $logo-height: rem(32);
 
 .a-logo {
   width: rem(80);
+  height: rem(25.5);
+  height: auto;
   display: inline-block;
+  background-color: lightyellow;
 
   @include media-breakpoint-up(medium) {
     width: rem(100);
+    height: rem(32);
   }
 
   @include media-breakpoint-up(large) {
     width: rem(150);
+    height: rem(48);
   }
 
   svg {

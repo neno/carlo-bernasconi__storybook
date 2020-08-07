@@ -17,22 +17,24 @@
   }
 
   .o-header__links {
+    display: flex;
+    align-items: flex-end;
+
     @include media-breakpoint-up(large) {
-      display: flex;
+      align-items: center;
     }
   }
 
   &__nav {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
     position: absolute;
     left: 0;
     top: $logo-height;
     width: 100%;
     transform: translateX(-100%);
     transition: transform $transition-time-default;
-
-
 
     @include media-breakpoint-up(large) {
       display: inline-flex;
@@ -45,6 +47,13 @@
         margin-left: rem(16);
       }
     }
+  }
+
+  .a-link--search,
+  .a-btn--menu {
+    height: rem(20);
+    width: rem(20);
+    line-height: 1;
   }
 
   .a-btn--menu {

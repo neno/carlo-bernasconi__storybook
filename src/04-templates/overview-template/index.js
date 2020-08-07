@@ -4,7 +4,6 @@ import { heroData } from "../../02-molecules/hero/stories/hero.data"
 import { pictureData } from "../../01-atoms/picture/stories/picture.data"
 import TeasersGrid from "../../03-organisms/teasers-grid/index"
 import { teaserData } from "../../03-organisms/teasers-grid/stories/teasers-grid.data"
-import RichText from "../../01-atoms/rich-text"
 import Layout from "../layout"
 
 const OverviewTemplate = () => (
@@ -19,12 +18,12 @@ const OverviewTemplate = () => (
     </div>
     <div className="l-component">
       <div className="l-constrainer">
-        <h1>Unsere Kompetenzen</h1>
+        <h2>Unsere Kompetenzen</h2>
         <p>
-          Mit unseren Steinen lassen sich alle Bereiche verschönern.
-          ...Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-          diam nonumy eirmod tempor invidunt ut labore et dolore magna
-          aliquyam erat, sed diam voluptua.
+          Mit unseren Steinen lassen sich alle Bereiche verschönern. ...Lorem
+          ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+          eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+          diam voluptua.
         </p>
       </div>
     </div>

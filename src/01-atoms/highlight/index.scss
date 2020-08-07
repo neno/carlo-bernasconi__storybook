@@ -1,5 +1,9 @@
 .a-highlight {
-  padding: rem(20);
+  padding: rem(20) rem(20) rem(20) rem(19);
+
+  @supports (display: grid) {
+    padding: rem(20);
+  }
 
   &--gray {
     background-color: $color-secondary-gray-light;

@@ -2,7 +2,7 @@
 /// @param {Number} $number - Number to remove unit from
 /// @return {Number} - Unitless number
 @function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
+  @if type-of($number) == "number" and not unitless($number) {
     @return $number / ($number * 0 + 1);
   }
 
@@ -18,7 +18,13 @@
 }
 
 @function colWidth($cols, $total-cols: 12, $width: 100%, $grid-gutter: 30) {
-  $available-width: calc(#{$width} - ((#{$total-cols} - 1) * #{rem($grid-gutter)}));
+  $available-width: calc(
+    #{$width} - ((#{$total-cols} - 1) * #{rem($grid-gutter)})
+  );
   $one-col: calc(#{$available-width}/#{$total-cols});
   @return calc(#{$cols} * #{$one-col});
+}
+
+@function grid-col-width-ie($cols, $total-cols, $grid-gutter) {
+  @return calc((100% / #{$total-cols}) * #{$cols} - #{$grid-gutter});
 }
