@@ -1,23 +1,31 @@
-import React, { useState } from 'react';
-import Link from '../../01-atoms/link';
-import Button from '../../01-atoms/button';
+import React, { useState } from "react"
+import Link from "../../01-atoms/link"
+import Button from "../../01-atoms/button"
 
 const LanguageSelector = ({ languages, currentLang, status }) => (
-  <div className='m-language-selector'>
+  <div
+    className="m-language-selector"
+    data-module="collapsible"
+    data-collapsible-options={JSON.stringify({
+      triggerSelector: ".a-btn",
+      triggerActiveClass: "a-btn--active",
+      targetSelector: ".m-language-selector__list"
+    })}
+  >
     <Button
-      attr={{ 'aria-expanded': status === 'expanded' ? 'true' : 'false' }}
-      classes={['a-btn--lang']}
+      attr={{ "aria-expanded": status === "expanded" ? "true" : "false" }}
+      classes={["a-btn--lang"]}
     >
       <span>{currentLang}</span>
     </Button>
     <ul
-      className='m-language-selector__list'
-      aria-hidden={status === 'expanded' ? false : true}
+      className="m-language-selector__list"
+      aria-hidden={status === "expanded" ? false : true}
     >
-      {languages.map((lang) =>
-        Object.keys(lang).map((key) => (
+      {languages.map(lang =>
+        Object.keys(lang).map(key => (
           <li key={key}>
-            <Link classes={['a-link a-link--lang']}>
+            <Link classes={["a-link a-link--lang"]}>
               <abbr title={lang[key]}>{key}</abbr>
             </Link>
           </li>
@@ -25,6 +33,6 @@ const LanguageSelector = ({ languages, currentLang, status }) => (
       )}
     </ul>
   </div>
-);
+)
 
-export default LanguageSelector;
+export default LanguageSelector
