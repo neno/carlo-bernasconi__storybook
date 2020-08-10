@@ -6,7 +6,7 @@ const Accordion = ({ panels, classes = [] }) => (
   <div
     className={`m-accordion ${classes.join(" ")}`}
     data-module="accordion"
-    data-collapsible-options={JSON.stringify({
+    data-accordion-options={JSON.stringify({
       triggerSelector: ".a-btn--accordion",
       activeClsModifier: "--active",
       targetSelector: ".m-accordion__panel"

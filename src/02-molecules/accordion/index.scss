@@ -1,14 +1,19 @@
 .m-accordion {
-  &__header:first-child {
-    .a-btn--accordion {
-      border-top: none;
-    }
+  &__header {
+    margin-bottom: 0;
+    border-bottom: 1px solid $color-primary-blue;
   }
+
   &__panel {
     display: none;
+    border-bottom: 1px solid $color-primary-blue;
 
     &[aria-hidden="false"] {
       display: block;
+    }
+
+    &:last-child {
+      border-bottom: none;
     }
   }
 

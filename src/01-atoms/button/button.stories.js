@@ -41,8 +41,9 @@ export const AccordionButton = ({
 }) => (
   <Button
     classes={[
-      `a-btn--accordion a-btn--lbl-icon ${status === "expanded" &&
-        "a-btn--expanded"}`
+      `a-btn--accordion a-btn--lbl-icon ${
+        status === "expanded" ? "a-btn--active" : ""
+      }`
     ]}
     attr={{
       id: "accordion-header-1",
@@ -50,7 +51,8 @@ export const AccordionButton = ({
     }}
   >
     <span>{heading}</span>
-    <Icon name={status === "expanded" ? "minus" : "plus"} />
+    <Icon name="minus" />
+    <Icon name="plus" />
   </Button>
 )
 

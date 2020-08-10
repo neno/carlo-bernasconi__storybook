@@ -24,6 +24,26 @@
     pointer-events: none;
   }
 
+  &--accordion {
+    .a-ico--minus {
+      display: block;
+    }
+
+    .a-ico--plus {
+      display: none;
+    }
+
+    &.a-btn--active {
+      .a-ico--minus {
+        display: none;
+      }
+
+      .a-ico--plus {
+        display: block;
+      }
+    }
+  }
+
   &--primary {
     background-color: $color-primary-blue;
     border-color: $color-primary-blue;
@@ -88,9 +108,6 @@
     display: flex;
     justify-content: space-between;
     padding: rem(10) 0;
-    border-top: 1px solid $color-primary-blue;
-    border-bottom: 1px solid $color-primary-blue;
-    margin-bottom: rem(10);
 
     .a-ico {
       margin-left: rem(16);
