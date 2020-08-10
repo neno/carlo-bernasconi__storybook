@@ -6,7 +6,7 @@ export const heroData = {
 }
 
 export const heroDataDetail = {
-  title: "Küchenabdeckungen",
+  title: "Küchen&shy;abdeckungen",
   text:
     "Ihre Küche... Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.",
   breadcrumbItems: ["Kompetenzen", "Küchenabdeckungen"]

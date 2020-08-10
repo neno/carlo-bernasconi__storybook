@@ -26,7 +26,7 @@ const Hero = ({
         <div className="m-hero__inner">
           <div className="l-component">
             <div className="l-constrainer">
-              <h1>{title}</h1>
+              <h1 dangerouslySetInnerHTML={{ __html: title }} />
               <p>{text}</p>
             </div>
           </div>
