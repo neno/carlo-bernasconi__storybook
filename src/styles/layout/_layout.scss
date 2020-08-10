@@ -72,10 +72,10 @@ $maxWidthCurveFull: (
     padding-bottom: 0;
   }
 
-  > * .l-constrainer > * {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+  // > * .l-constrainer > * {
+  //   margin-bottom: 0;
+  //   padding-bottom: 0;
+  // }
 }
 
 .l-constrainer {
@@ -86,13 +86,21 @@ $maxWidthCurveFull: (
   }
 
   > {
-    h1,h2,h3,h4,p {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
       width: colWidth(3, 4);
     }
   }
 
   .l-constrainer {
-    h1,h2,h3,h4,p {
+    h1,
+    h2,
+    h3,
+    h4,
+    p {
       width: 100%;
     }
   }
@@ -100,4 +108,18 @@ $maxWidthCurveFull: (
 
 .l-constrainer-full {
   @include maxWidthCurveFull;
+}
+
+#main {
+  z-index: z-index(page-layout, main);
+  position: relative;
+  padding-top: header-height($headerPaddings, $logoHeight, zero);
+
+  @include media-breakpoint-up(medium) {
+    padding-top: header-height($headerPaddings, $logoHeight, medium);
+  }
+
+  @include media-breakpoint-up(large) {
+    padding-top: header-height($headerPaddings, $logoHeight, large);
+  }
 }

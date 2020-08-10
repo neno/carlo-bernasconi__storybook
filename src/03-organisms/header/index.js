@@ -10,34 +10,27 @@ import { languagesData } from "../../02-molecules/language-selector/stories/lang
 
 const Header = ({ isActive }) => (
   <div
+    id="header"
     className={`o-header l-constrainer-full ${
       isActive === "true" ? " o-header--active" : ""
     }`}
+    data-module="nav"
+    data-nav-options={JSON.stringify({
+      triggerSelector: ".a-btn--menu",
+      activeClsModifier: "--active",
+      targetSelector: ".o-header__nav"
+    })}
   >
     <Logo />
     <div className="o-header__links">
-      <div
-        className="o-header__nav"
-        aria-visible={isActive}
-        aria-controlled-by={isActive && "menu-button"}
-      >
+      <div data-module="nav" className="o-header__nav">
         <Nav items={navItems()} />
         <LanguageSelector languages={languagesData} currentLang="DE" />
       </div>
       <Link classes={["a-link a-link--search a-link--icon"]}>
         <Icon name="search" />
       </Link>
-      <Button
-        classes={["a-btn--menu a-btn--icon"]}
-        attr={{
-          id: "menu-button",
-          "aria-expanded": "false",
-          "data-module": "toggle",
-          "data-toggle-options": JSON.stringify({
-            "target-selector": "o-header__nav"
-          })
-        }}
-      >
+      <Button classes={["a-btn--menu a-btn--icon"]}>
         <Icon name="menu" />
       </Button>
     </div>

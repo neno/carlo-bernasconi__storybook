@@ -5,7 +5,7 @@ import Footer from "../../03-organisms/footer"
 const Layout = ({ classes, children }) => (
   <div className={`t-template ${classes.join(" ")}`}>
     <Header />
-    <main>{children}</main>
+    <main id="main">{children}</main>
     <Footer />
   </div>
 )

@@ -1,19 +1,27 @@
 .o-header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding: rem(15);
+  padding-top: map-get-deep($headerPaddings, zero, padding-top);
+  padding-right: map-get-deep($headerPaddings, zero, padding-right);
+  padding-bottom: map-get-deep($headerPaddings, zero, padding-bottom);
+  padding-left: map-get-deep($headerPaddings, zero, padding-left);
+
+  z-index: z-index(page-layout, header);
+  background-color: $color-primary-white;
 
   @include media-breakpoint-up(large) {
-    padding: rem(40) rem(50);
+    padding-top: map-get-deep($headerPaddings, large, padding-top);
+    padding-right: map-get-deep($headerPaddings, large, padding-right);
+    padding-bottom: map-get-deep($headerPaddings, large, padding-bottom);
+    padding-left: map-get-deep($headerPaddings, large, padding-left);
   }
 
   .a-logo {
     flex: 0 0 auto;
-  }
-
-  &--active &__nav {
-    transform: translateX(0);
   }
 
   .o-header__links {
@@ -26,25 +34,67 @@
   }
 
   &__nav {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    position: absolute;
+    position: fixed;
+    top: header-height($headerPaddings, $logoHeight, zero);
+    right: 0;
+    bottom: 0;
     left: 0;
-    top: $logo-height;
-    width: 100%;
+    background-color: $color-primary-white;
     transform: translateX(-100%);
-    transition: transform $transition-time-default;
+    opacity: 1;
+    transition: transform $transition-time-default ease-out;
+    will-change: transition, opacity;
+
+    &--active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    @include media-breakpoint-up(medium) {
+      top: header-height($headerPaddings, $logoHeight, zero);
+    }
 
     @include media-breakpoint-up(large) {
       display: inline-flex;
+      align-items: center;
       flex-direction: row;
       position: relative;
       top: 0;
       transform: translateX(0);
+      opacity: 1;
 
       .a-link--search {
         margin-left: rem(16);
+      }
+    }
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: rem(30) rem(48) rem(30) 1fr;
+
+    .m-nav,
+    .m-language-selector {
+      max-width: calc(100% - (2 * #{rem(15)}));
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+
+      @include media-breakpoint-up(large) {
+        max-width: 100%;
+      }
+    }
+
+    .m-nav {
+      grid-column: 1;
+      grid-row: 4;
+    }
+
+    .m-language-selector {
+      grid-column: 1;
+      grid-row: 2;
+
+      @include media-breakpoint-up(large) {
+        margin-right: rem(20);
       }
     }
   }

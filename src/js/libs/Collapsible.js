@@ -5,6 +5,7 @@ const Collapsible = createModule({
     const trigger = el.querySelector(options.triggerSelector)
     const target = el.querySelector(options.targetSelector)
     const activeCls = options.triggerSelector.replace(".", "") + "--active"
+    console.log("Collapsible", options)
 
     function showTarget() {
       console.log("showTarget")
