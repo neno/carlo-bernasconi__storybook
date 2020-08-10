@@ -82,4 +82,18 @@
       width: auto;
     }
   }
+
+  &--lbl-icon {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(10) 0;
+    border-top: 1px solid $color-primary-blue;
+    border-bottom: 1px solid $color-primary-blue;
+    margin-bottom: rem(10);
+
+    .a-ico {
+      margin-left: rem(16);
+    }
+  }
 }

@@ -5,17 +5,14 @@ const Collapsible = createModule({
     const trigger = el.querySelector(options.triggerSelector)
     const target = el.querySelector(options.targetSelector)
     const activeCls = options.triggerSelector.replace(".", "") + "--active"
-    console.log("Collapsible", options)
 
     function showTarget() {
-      console.log("showTarget")
       trigger.setAttribute("aria-expanded", "true")
       trigger.classList.add(activeCls)
       target.setAttribute("aria-hidden", "false")
     }
 
     function hideTarget() {
-      console.log("hideTarget")
       trigger.setAttribute("aria-expanded", "false")
       trigger.classList.remove(activeCls)
       target.setAttribute("aria-hidden", "true")

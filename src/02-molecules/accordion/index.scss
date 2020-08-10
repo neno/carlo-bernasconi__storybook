@@ -1,0 +1,18 @@
+.m-accordion {
+  &__header:first-child {
+    .a-btn--accordion {
+      border-top: none;
+    }
+  }
+  &__panel {
+    display: none;
+
+    &[aria-hidden="false"] {
+      display: block;
+    }
+  }
+
+  &__panel-inner {
+    padding: rem(20) 0;
+  }
+}

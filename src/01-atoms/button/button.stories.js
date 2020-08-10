@@ -30,16 +30,39 @@ export const ButtonIcon = () =>
 
 export const MenuButton = () =>
   renderToStaticMarkup(
-    <Button
-      classes={["a-btn--menu a-btn--icon"]}
-      attr={{
-        "aria-expanded": "false",
-        "data-module": "toggle",
-        "data-toggle-options": JSON.stringify({
-          "target-selector": "o-header__nav"
-        })
-      }}
-    >
+    <Button classes={["a-btn--menu a-btn--icon"]}>
       <Icon name="menu" />
     </Button>
+  )
+
+export const AccordionButton = ({
+  status = "collapsed",
+  heading = "Accordion Panel Heading"
+}) => (
+  <Button
+    classes={[
+      `a-btn--accordion a-btn--lbl-icon ${status === "expanded" &&
+        "a-btn--expanded"}`
+    ]}
+    attr={{
+      id: "accordion-header-1",
+      "aria-expanded": status === "expanded" ? "true" : "false"
+    }}
+  >
+    <span>{heading}</span>
+    <Icon name={status === "expanded" ? "minus" : "plus"} />
+  </Button>
+)
+
+export const AccordionButtonCollapsed = () =>
+  renderToStaticMarkup(
+    <AccordionButton heading="Accordion Panel Heading Collapsed" />
+  )
+
+export const AccordionButtonExpanded = () =>
+  renderToStaticMarkup(
+    <AccordionButton
+      status="expanded"
+      heading="Accordion Panel Heading Collapsed"
+    />
   )
