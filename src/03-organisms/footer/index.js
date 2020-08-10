@@ -4,7 +4,7 @@ import LinkList from "../../02-molecules/link-list"
 import { footerData } from "../../02-molecules/footer-section/stories/footer-section.data"
 
 const Footer = () => (
-  <footer id="header" className="o-footer">
+  <footer id="footer" className="o-footer">
     <div className="l-constrainer">
       <div className="o-footer__sections">
         <FooterSection title={footerData.quicklinks.title}>
