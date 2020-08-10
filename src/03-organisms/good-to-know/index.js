@@ -3,9 +3,6 @@ import Highlight from "../../01-atoms/highlight"
 import Teaser from "../../02-molecules/teaser"
 import { teaserData } from "./stories/good-to-know.data"
 
-import TeasersGrid from "../teasers-grid/index"
-// import { teaserData } from "../../03-organisms/teasers-grid/stories/teasers-grid.data"
-
 const GoToKnow = () => (
   <aside className="o-good-to-know">
     <Highlight classes={["a-highlight--gray o-good-to-know__highlight"]}>

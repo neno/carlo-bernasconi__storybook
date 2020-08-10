@@ -11,9 +11,7 @@ import { languagesData } from "../../02-molecules/language-selector/stories/lang
 const Header = ({ isActive }) => (
   <div
     id="header"
-    className={`o-header l-constrainer-full ${
-      isActive === "true" ? " o-header--active" : ""
-    }`}
+    className={`o-header l-constrainer-full`}
     data-module="nav"
     data-nav-options={JSON.stringify({
       triggerSelector: ".a-btn--menu",
@@ -23,7 +21,11 @@ const Header = ({ isActive }) => (
   >
     <Logo />
     <div className="o-header__links">
-      <div data-module="nav" className="o-header__nav">
+      <div
+        className={`o-header__nav ${
+          isActive === "true" ? " o-header__nav--active" : ""
+        }`}
+      >
         <Nav items={navItems()} />
         <LanguageSelector languages={languagesData} currentLang="DE" />
       </div>

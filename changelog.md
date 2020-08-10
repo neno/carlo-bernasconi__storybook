@@ -8,6 +8,14 @@
 - add ID to `<main id="main">`
 - add ID to `<footer id="footer">`
 
+### Header
+
+- Add data-attributes
+  \
+  `data-module="nav"`
+  \
+  `data-nav-options='{"triggerSelector":".a-btn--menu","activeClsModifier":"--active","targetSelector":".o-header__nav"}'`
+
 ### Hero
 
 - modify HTML inside Text container
