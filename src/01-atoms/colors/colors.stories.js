@@ -1,9 +1,16 @@
 import React from "react"
 import { renderToStaticMarkup } from "react-dom/server"
-import colors from "../../styles/settings/_colors.scss"
 
 export default {
   title: "01-Atoms/Colors"
+}
+
+const colors = {
+  primaryColorBlue: "#243b47",
+  primaryColorWhite: "#fff",
+  primaryColorOrange: "#c8652b",
+  secondaryColorGray: "#d5d5d5",
+  secondaryColorGrayLight: "#f4f4f4"
 }
 
 const ColorBox = ({ color }) => {
@@ -24,14 +31,14 @@ const ColorBox = ({ color }) => {
 export const PrimaryBlue = () =>
   renderToStaticMarkup(<ColorBox color={colors.primaryColorBlue} />)
 
-// export const PrimaryOrange = () =>
-//   renderToStaticMarkup(<ColorBox color={colors.primaryColorOrange} />)
+export const PrimaryOrange = () =>
+  renderToStaticMarkup(<ColorBox color={colors.primaryColorOrange} />)
 
-// export const PrimaryWhite = () =>
-//   renderToStaticMarkup(<ColorBox color={colors.primaryColorWhite} />)
+export const PrimaryWhite = () =>
+  renderToStaticMarkup(<ColorBox color={colors.primaryColorWhite} />)
 
-// export const SecondaryGray = () =>
-//   renderToStaticMarkup(<ColorBox color={colors.secondaryColorGray} />)
+export const SecondaryGray = () =>
+  renderToStaticMarkup(<ColorBox color={colors.secondaryColorGray} />)
 
-// export const SecondaryGrayLight = () =>
-//   renderToStaticMarkup(<ColorBox color={colors.secondaryColorGrayLight} />)
+export const SecondaryGrayLight = () =>
+  renderToStaticMarkup(<ColorBox color={colors.secondaryColorGrayLight} />)
