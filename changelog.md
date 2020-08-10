@@ -2,6 +2,11 @@
 
 ## 2020-08-09
 
+### Accordion
+
+- m-accordion: data-Attribute gändert (siehe File in Dropbox)
+- Button innerhalt von .m-accordion\_\_header: CSS-Klassen und Attribute verändert (siehe File in Dropbox)
+
 ### IDs
 
 - add ID to `<header id="header">`
