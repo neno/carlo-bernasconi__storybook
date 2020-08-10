@@ -111,6 +111,7 @@ $maxWidthCurveFull: (
 }
 
 #main {
+  display: block;
   z-index: z-index(page-layout, main);
   position: relative;
   padding-top: header-height($headerPaddings, $logoHeight, zero);

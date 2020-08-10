@@ -80,7 +80,7 @@
       width: 100%;
 
       @include media-breakpoint-up(large) {
-        max-width: 100%;
+        max-width: auto;
       }
     }
 
@@ -95,6 +95,8 @@
 
       @include media-breakpoint-up(large) {
         margin-right: rem(20);
+        margin-left: 0;
+        max-width: rem(24);
       }
     }
   }
@@ -108,5 +110,9 @@
 
   .a-btn--menu {
     margin-left: rem(16);
+
+    @include media-breakpoint-up(large) {
+      display: none;
+    }
   }
 }

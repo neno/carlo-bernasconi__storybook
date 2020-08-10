@@ -7,13 +7,6 @@ export default {
   title: "01-Atoms/Buttons"
 }
 
-export const ButtonDefault = () =>
-  renderToStaticMarkup(
-    <Button>
-      <span>DE</span>
-    </Button>
-  )
-
 export const ButtonPrimary = () =>
   renderToStaticMarkup(
     <Button classes={["a-btn--primary"]}>
