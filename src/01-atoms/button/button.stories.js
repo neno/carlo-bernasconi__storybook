@@ -4,7 +4,8 @@ import Button from "./index"
 import Icon from "../icon"
 
 export default {
-  title: "01-Atoms/Buttons"
+  title: "01-Atoms/Buttons",
+  excludeStories: /AccordionButton$/
 }
 
 export const ButtonPrimary = () =>
@@ -65,6 +66,6 @@ export const AccordionButtonExpanded = () =>
   renderToStaticMarkup(
     <AccordionButton
       status="expanded"
-      heading="Accordion Panel Heading Collapsed"
+      heading="Accordion Panel Heading Expanded"
     />
   )
