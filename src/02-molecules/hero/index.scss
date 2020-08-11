@@ -5,6 +5,7 @@
 
   h1 {
     word-break: break-word;
+    margin-top: rem(30);
   }
 
   .m-hero__breadcrumbs {
@@ -59,6 +60,10 @@
       flex-direction: column;
       justify-content: center;
       padding-left: calc((100% / 12) + 1.5 * #{$grid-gutter});
+    }
+
+    h1 {
+      margin-top: 0;
     }
 
     .m-hero__breadcrumbs {

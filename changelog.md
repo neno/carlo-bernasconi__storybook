@@ -2,6 +2,18 @@
 
 ## 2020-08-09
 
+### Hero
+
+- Adapt Picture size in "src" because of IE11 `src: 'https://placehold.it/1200x675'`
+
+### Detail Template
+
+- Adapt Image of Teaser because of IE11 `src: 'https://placehold.it/800x450'`
+
+### Teaser Grid / Overview Template
+
+- Adapt Image Ratio to meet 16:9`
+
 ### Accordion
 
 - m-accordion: data-Attribute gändert (siehe File in Dropbox)

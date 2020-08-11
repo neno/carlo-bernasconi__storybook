@@ -2,11 +2,6 @@
   @include inline-list;
 
   align-items: flex-start;
-  margin-bottom: rem(30);
-
-  @include media-breakpoint-up(large) {
-    margin-bottom: rem(0);
-  }
 
   &__list {
     @include no-bullets;
