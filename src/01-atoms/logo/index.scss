@@ -3,18 +3,20 @@
 
   svg {
     height: map-get($logoHeight, zero);
-    width: auto;
+    width: map-get($logoHeight, zero) * $logo-ratio;
   }
 
   @include media-breakpoint-up(medium) {
     svg {
       height: map-get($logoHeight, medium);
+      width: map-get($logoHeight, medium) * $logo-ratio;
     }
   }
 
   @include media-breakpoint-up(large) {
     svg {
       height: map-get($logoHeight, large);
+      width: map-get($logoHeight, large) * $logo-ratio;
     }
   }
 }

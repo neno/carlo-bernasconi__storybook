@@ -1,5 +1,4 @@
 import createModule from "./create-module"
-// data-collapsible-options='{"triggerSelector":".a-btn--accordion","activeClsModifier":"--active","targetSelector":".m-accordion__panel"}'
 
 const Accordion = createModule({
   constructor: function({ el, state, options }) {

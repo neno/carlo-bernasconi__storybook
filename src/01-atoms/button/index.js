@@ -1,24 +1,18 @@
-import React, { useEffect, useRef } from 'react';
+import React from "react"
 
 const Button = ({ children, handleClick, classes = [], attr = {} }) => {
-  const cls = ['a-btn', ...classes];
-  const btnRef = useRef();
-
-  useEffect(() => {
-    console.log('Button ref', btnRef.current);
-  });
+  const cls = ["a-btn", ...classes]
 
   return (
     <button
-      type='button'
+      type="button"
       onClick={handleClick}
-      className={cls.join(' ')}
+      className={cls.join(" ")}
       {...attr}
-      ref={btnRef}
     >
       {children}
     </button>
-  );
-};
+  )
+}
 
-export default Button;
+export default Button

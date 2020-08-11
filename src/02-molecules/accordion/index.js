@@ -1,5 +1,4 @@
 import React from "react"
-import Button from "../../01-atoms/button"
 import { AccordionButton } from "../../01-atoms/button/button.stories"
 
 const Accordion = ({ panels, classes = [] }) => (
