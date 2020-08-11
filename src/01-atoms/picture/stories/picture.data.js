@@ -1,6 +1,6 @@
 export const pictureData = {
-  dataSrc: 'https://placehold.it/300x169',
-  src: 'https://placehold.it/300x169',
+  dataSrc: 'https://placehold.it/1200x675',
+  src: 'https://placehold.it/1200x675',
   sources: [
     {
       dataSrcset: `

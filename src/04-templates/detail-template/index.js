@@ -8,6 +8,8 @@ import GoodToKnow from "../../03-organisms/good-to-know"
 import Teaser from "../../02-molecules/teaser"
 import { teaserData } from "../../03-organisms/teasers-grid/stories/teasers-grid.data"
 
+const imgData = Object.assign({}, teaserData[1].img, {src: 'https://placehold.it/1074x780'})
+
 const DetailTemplate = () => (
   <Layout classes={["t-template--overview"]}>
     <div className="l-component">
@@ -32,7 +34,7 @@ const DetailTemplate = () => (
       <div className="l-constrainer">
         <div className="l-grid l-grid--4">
           <div className="l-col l-col--3">
-            <Teaser imageData={teaserData[1].img} title={teaserData[1].title} />
+            <Teaser imageData={imgData} title={teaserData[1].title} />
           </div>
         </div>
       </div>
